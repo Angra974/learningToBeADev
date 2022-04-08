@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="This is where your description goes" />
+    <meta name="keywords" content="one, two, three" />
+
+    <title>Title in the tab</title>
+
+    <!-- external CSS link -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- little clone from  https://www.rapidtables.com/convert/temperature/index.html -->
+
+    <div class="wrapper">
+      <div class="temperatures">
+        <div class="parameter fahrenheit">
+          <label for="fahrenheit"><i class="fa fa-info"></i>Fahrenheit</label>
+          <input
+            type="text"
+            name="fahrenheit"
+            id="fahrenheit"
+            value="0"
+            placeholder=""
+          />
+          <span class="sigle">°F</span>
+          <button type="btn btn--transparent">Convert</button>
+        </div>
+        <div class="parameter rankine">
+          <label for="rankine"><i class="fa fa-info"></i>Rankine</label>
+          <input
+            type="text"
+            name="rankine"
+            id="rankine"
+            value="0"
+            placeholder=""
+          />
+          <span class="sigle">°R</span>
+          <button type="btn btn--transparent">Convert</button>
+        </div>
+        <div class="parameter celsius">
+          <label for="celsius"><i class="fa fa-info"></i>Celsius</label>
+          <input
+            type="text"
+            name="celsius"
+            id="celsius"
+            value="0"
+            placeholder=""
+          />
+          <span class="sigle">°C</span>
+          <button type="btn btn--transparent">Convert</button>
+        </div>
+
+        <div class="parameter kelvin">
+          <label for="kelvin"><i class="fa fa-info"></i>Kelvin</label>
+          <input
+            type="text"
+            name="kelvin"
+            id="kelvin"
+            value="0"
+            placeholder=""
+          />
+          <span class="sigle">K</span>
+          <button type="btn btn--transparent">Convert</button>
+        </div>
+        <button type="reset" id="reset">Reset</button>
+        <div class="selectable">
+          <select id="degreeSelect" name="degreeSelect">
+            <option value="fahrenheit" class="opt">fahrenheit</option>
+            <option value="rankine" class="opt">Rankine</option>
+            <option value="celsius" class="opt">Celsius</option>
+            <option value="Kelvin" class="opt">Kelvin</option>
+          </select>
+          <div class="btns">
+            <button class="btn">-100</button>
+            <button class="btn">-50</button>
+
+            <button class="btn">-40</button>
+
+            <button class="btn">-30</button>
+
+            <button class="btn">-20</button>
+
+            <button class="btn">-10</button>
+
+            <button class="btn">0</button>
+
+            <button class="btn">10</button>
+
+            <button class="btn">20</button>
+
+            <button class="btn">30</button>
+
+            <button class="btn">40</button>
+
+            <button class="btn">50</button>
+
+            <button class="btn">100</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>

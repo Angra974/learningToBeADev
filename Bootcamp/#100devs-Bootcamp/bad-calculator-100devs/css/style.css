@@ -1,0 +1,214 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --blue-light: #6acde5;
+  --blue-dark: #2a348e;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+body {
+  background-image: url(../img/pexels-j-lee-6830332.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+
+  color: #2a363b;
+
+  text-shadow: 1px 1px 1px cornsilk;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+.main-app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 500px;
+  height: 100vh;
+}
+
+.calculator {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 280px;
+  border-radius: 20px;
+  height: 370px;
+  font-weight: 900;
+  border: 1px solid #f8c7d8;
+}
+
+.app {
+  margin: 5px auto;
+  width: 100%;
+  padding-left: 10%;
+}
+
+#result,
+#calc {
+  color: #2a363b;
+
+  text-shadow: 1px 1px 1px cornsilk;
+  background: transparent;
+  border: 1px solid #c79854;
+  border-radius: 5px;
+  text-align: right;
+  padding: 10px;
+  width: 225px;
+  margin: 3px 0;
+}
+
+#result {
+}
+button {
+  width: 50px;
+  height: 50px;
+  margin: 2px;
+  border-radius: 50%;
+  border: none;
+}
+
+.btn {
+  background: none;
+  position: relative;
+  z-index: 0;
+}
+
+button > * {
+  pointer-events: none;
+}
+
+.img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  z-index: 0;
+  top: 0;
+  left: 0;
+}
+
+.content {
+  position: absolute;
+  z-index: 1;
+}
+.pair {
+  background: transparent;
+  background: url("../img/22318-cherry-blossom-icon.png") no-repeat scroll 0 0
+    transparent;
+}
+button:hover {
+  border: 1px solid #ff847c;
+  color: #2a363b;
+}
+
+.hold {
+  opacity: 0.5;
+  border-color: 2px solid var(--blue-light);
+}
+
+.content {
+  font-weight: 900;
+}
+#num0 .content {
+  top: 18px;
+  left: 20px;
+}
+
+#num1 .content {
+  top: 18px;
+  left: 20px;
+}
+#num2 .content {
+  top: 18px;
+  left: 20px;
+}
+
+#num3 .content {
+  top: 18px;
+  left: 20px;
+}
+
+#num4 .content {
+  top: 18px;
+  left: 20px;
+}
+
+#num5 .content {
+  top: 18px;
+  left: 20px;
+}
+
+#num6 .content {
+  top: 18px;
+  left: 20px;
+}
+
+#num7 .content {
+  top: 18px;
+  left: 20px;
+}
+
+#num8 .content {
+  top: 18px;
+  left: 20px;
+}
+
+#num9 .content {
+  top: 18px;
+  left: 20px;
+}
+#clear .content {
+  top: 18px;
+  left: 18px;
+}
+#back .content {
+  top: 15px;
+  left: 18px;
+}
+
+#powRacine .content {
+  top: 20px;
+  left: 21px;
+}
+
+#fn .content {
+  top: 18px;
+  left: 18px;
+}
+#diviz .content {
+  top: 18px;
+  left: 18px;
+}
+#substract .content {
+  top: 16px;
+  left: 22px;
+}
+
+#multiple .content {
+  top: 18px;
+  left: 18px;
+}
+
+#point .content {
+  top: 13px;
+  left: 22px;
+}
+#equal .content {
+  top: 18px;
+  left: 18px;
+}
+#add .content {
+  top: 18px;
+  left: 18px;
+}

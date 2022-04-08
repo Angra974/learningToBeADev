@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>JavaScript Fundamentals – Part 1</title>
+    <link href="./main.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="center">
+      <h1>JavaScript Fundamentals &mdash; Part 1</h1>
+      <h2>Calculate your BMI ( Body Mass Index)</h2>
+      <div id="result"></div>
+      <div class="bmi title">
+        <label for="title" class="hidden">Person0</label>
+        <input type="disabled" value="Mass" />
+        <input type="disabled" value="Height" />
+      </div>
+      <div class="bmi">
+        <label for="person1Mass">Person1</label>
+        <input
+          type="text"
+          name="person1Mass"
+          id="person1Mass"
+          value=""
+          placeholder="Mass"
+          aria-label="person1mass"
+        />
+        <label for="person1Height"></label>
+        <input
+          type="text"
+          name="person1Height"
+          id="person1Height"
+          value=""
+          placeholder="Height"
+          aria-label="person1Height"
+        />
+      </div>
+      <div class="bmi">
+        <label for="mass2">Person2</label>
+        <input
+          type="text"
+          name="person2mass"
+          id="person2Mass"
+          value=""
+          placeholder="mass"
+          aria-label="person2mass"
+        />
+        <input
+          type="text"
+          name="person2Height"
+          id="person2Height"
+          value=""
+          placeholder="Height"
+          aria-label="person2Height"
+        />
+      </div>
+      <button class="btn btn-blue">Calculate</button>
+    </div>
+    <script type="text/javascript" src="./main.js"></script>
+  </body>
+</html>
