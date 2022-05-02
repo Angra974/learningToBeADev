@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Your description goes here" />
+    <meta name="keywords" content="one, two, three" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Blank Template</title>
+
+    <!-- external CSS link -->
+
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <link rel="stylesheet" href="assets/css/flex.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <nav>
+          <input type="checkbox" id="menuToggle" name="menuToggle" />
+          <label for="menuToggle">
+            <span class="bar1"></span>
+            <span class="bar1"></span>
+            <span class="bar1"></span>
+          </label>
+          <ul>
+            <li><a href="home.html" title="Home">Home</a></li>
+            <li><a href="aboutus" title="About Us">About Us</a></li>
+            <li><a href="menu" title="Menu">Menu</a></li>
+            <li><a href="order" title="Order Now">Order</a></li>
+            <li><a href="blog" title="Blog">Blog</a></li>
+            <li><a href="location" title="Location">Location</a></li>
+
+            <li>
+              <a href="cart.html" title="Shopping cart"
+                ><i class="fa fa-shopping-cart"></i
+              ></a>
+            </li>
+            <li>
+              <a href="search" title="search"><i class="fa fa-search"></i></a>
+            </li>
+          </ul>
+        </nav>
+
+        <section class="welcome clearfix">
+          <div>
+            <h2>
+              <span class="blk">Welcome</span>
+              <span class="blk">To Our Cuisine</span>
+              <span class="blk">Restaurant</span>
+            </h2>
+            <form>
+              <div class="input-container">
+                <i class="fa fa-search form-icon"></i>
+                <input
+                  type="search"
+                  placeholder="Search here"
+                  aria-label="search"
+                />
+                <select name="location" class="location-search btn btn--orange">
+                  <option value="Location">Location</option>
+                  <option value="Country">Country</option>
+                  <option value="Ingredient">Ingredient</option>
+                </select>
+              </div>
+            </form>
+
+            <div class="social">
+              <span><i class="fa fa-facebook"></i>252k</span>
+              <span><i class="fa fa-twitter"></i>62k</span>
+              <span><i class="fa fa-instagram"></i>55k</span>
+            </div>
+          </div>
+        </section>
+      </header>
+      <section class="aboutus">
+        <div class="aboutus-image">
+          <div class="discover">
+            <h4>About us</h4>
+            <h2>
+              <span class="blk">Discover Our</span>
+              <span class="blk">Restaurant Story</span>
+            </h2>
+            <p>
+              Mollit cillum aliquip ea tempor in laborum anim quis consectetur.
+              Mollit ad veniam veniam amet id excepteur non tempor id pariatur
+              dolor quis excepteur elit. Culpa veniam fugiat commodo do
+              excepteur incididunt est. Fugiat ipsum proident aliqua voluptate
+              adipisicing proident do proident excepteur adipisicing est labore
+              non magna. Ipsum elit sint ullamco culpa et nulla nostrud. Nulla
+              do sit sit Lorem id aute.
+            </p>
+            <p>
+              Aliquip laborum eiusmod eu est. Enim pariatur fugiat id cupidatat
+              do culpa non. Elit dolor eiusmod do aliquip elit ullamco in ad do
+              ex officia fugiat.
+            </p>
+            <button class="btn btn--db-orange">
+              <span></span>Discover Menu<i class="fa fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+      <!--
+        -->
+      <section class="speciality">
+        <h4>Order Online Now</h4>
+        <h2>Our Speciality Cuisine</h2>
+
+        <div class="tabs">
+          <input type="radio" name="tabs" id="tab1" checked />
+          <label for="tab1">
+            <i class="icon breakfast tooltip" data-text="Breakfast"></i
+            ><span>Breakfast</span>
+          </label>
+          <input type="radio" name="tabs" id="tab2" />
+          <label for="tab2">
+            <i class="icon lunch tooltip" data-text="Lunch"></i
+            ><span>Lunch</span>
+          </label>
+          <input type="radio" name="tabs" id="tab3" />
+          <label for="tab3">
+            <i class="icon dinner tooltip" data-text="Dinner"></i
+            ><span>Dinner</span>
+          </label>
+          <input type="radio" name="tabs" id="tab4" />
+          <label for="tab4">
+            <i class="icon dessert tooltip" data-text="Dessert"></i
+            ><span>Dessert</span>
+          </label>
+          <input type="radio" name="tabs" id="tab5" />
+          <label for="tab5">
+            <i class="icon shake tooltip rr" data-text="Shake"></i
+            ><span>Shake</span>
+          </label>
+
+          <div id="tab__content--1" class="tab__content">
+            <div class="food">
+              <img
+                src="assets/images/breakfast/istockphoto-1299661454-170667a.jpg"
+                class="food-image"
+              />
+              <div class="food-price">
+                <span class="c-white">14.33€</span>
+                <span class="stars"
+                  ><i class="fa fa-star"></i><i class="fa fa-star"></i
+                  ><i class="fa fa-star"></i><i class="fa fa-star"></i
+                  ><i class="fa fa-star"></i
+                ></span>
+                <span class="c-white">La Tortilla</span>
+                <button class="btn btn--orange">Order Now</button>
+              </div>
+            </div>
+
+            <div class="food">
+              <img
+                src="assets/images/breakfast/istockphoto-1311507085-170667a.jpg"
+                class="food-image"
+              />
+              <div class="food-price">
+                <span class="c-white">9.33€</span>
+                <span class="stars"
+                  ><i class="fa fa-star"></i><i class="fa fa-star"></i
+                  ><i class="fa fa-star"></i><i class="fa fa-star"></i
+                  ><i class="fa fa-star c-dark"></i
+                ></span>
+                <span class="c-white">Avocado Toast</span>
+                <button class="btn btn--orange">Order Now</button>
+              </div>
+            </div>
+
+            <div class="food">
+              <img
+                src="assets/images/breakfast/istockphoto-1314300338-170667a.jpg"
+                class="food-image"
+              />
+              <div class="food-price">
+                <span class="c-white">14.33€</span>
+                <span class="stars"
+                  ><i class="fa fa-star"></i><i class="fa fa-star"></i
+                  ><i class="fa fa-star"></i><i class="fa fa-star"></i
+                  ><i class="fa fa-star"></i
+                ></span>
+                <span class="c-white">La Tortilla</span>
+                <button class="btn btn--orange">Order Now</button>
+              </div>
+            </div>
+            <div class="food">
+              <img
+                src="assets/images/breakfast/istockphoto-533645537-170667a.jpg"
+                class="food-image"
+              />
+              <div class="food-price">
+                <span class="c-white">30,00€</span>
+                <span class="stars"
+                  ><i class="fa fa-star"></i><i class="fa fa-star"></i
+                  ><i class="fa fa-star"></i><i class="fa fa-star"></i
+                  ><i class="fa fa-star"></i
+                ></span>
+                <span class="c-white">Buffet</span>
+                <button class="btn btn--orange">Order Now</button>
+              </div>
+            </div>
+            <div class="food">
+              <img
+                src="assets/images/breakfast/istockphoto-863441560-170667a.jpg"
+                class="food-image"
+              />
+              <div class="food-price">
+                <span class="c-white">20.00€</span>
+                <span class="stars"
+                  ><i class="fa fa-star"></i><i class="fa fa-star"></i
+                  ><i class="fa fa-star"></i><i class="fa fa-star"></i
+                  ><i class="fa fa-star"></i
+                ></span>
+                <span class="c-white">Your Mix</span>
+                <button class="btn btn--orange">Order Now</button>
+              </div>
+            </div>
+          </div>
+          <div id="tab__content--2" class="tab__content">
+            <img
+              src="assets/images/launch/photo-1490645935967-10de6ba17061.avif"
+            />
+            <img
+              src="assets/images/launch/photo-1505576633757-0ac1084af824.avif"
+            />
+            <img
+              src="assets/images/launch/photo-1546069901-ba9599a7e63c.avif"
+            />
+            <img
+              src="assets/images/launch/photo-1600335895229-6e75511892c8.avif"
+            />
+            <img
+              src="assets/images/launch/photo-1627309302198-09a50ae1b209.avif"
+            />
+          </div>
+          <div id="tab__content--3" class="tab__content">
+            <img
+              src="assets/images/dinner/istockphoto-1278088432-170667a.jpg"
+            />
+            <img
+              src="assets/images/dinner/istockphoto-1336317090-170667a.jpg"
+            />
+            <img src="assets/images/dinner/istockphoto-495329828-170667a.jpg" />
+            <img
+              src="assets/images/dinner/photo-1512058564366-18510be2db19.avif"
+            />
+            <img
+              src="assets/images/dinner/photo-1603073163308-9654c3fb70b5.avif"
+            />
+          </div>
+          <div id="tab__content--4" class="tab__content">
+            <img
+              src="assets/images/dessert/istockphoto-1281093884-170667a.jpg"
+            />
+            <img
+              src="assets/images/dessert/istockphoto-1296474411-170667a.jpg"
+            />
+            <img
+              src="assets/images/dessert/istockphoto-623709028-170667a.jpg"
+            />
+            <img
+              src="assets/images/dessert/istockphoto-959868924-170667a.jpg"
+            />
+            <img
+              src="assets/images/dessert/photo-1495147466023-ac5c588e2e94.avif"
+            />
+          </div>
+          <div id="tab__content--5" class="tab__content">
+            <img
+              src="assets/images/Shake/photo-1513558161293-cdaf765ed2fd.avif"
+            />
+            <img
+              src="assets/images/Shake/photo-1527661591475-527312dd65f5.avif"
+            />
+            <img src="assets/images/Shake/photo-1563223771-375783ee91ad.avif" />
+            <img
+              src="assets/images/Shake/photo-1582269438702-578efa319292.avif"
+            />
+            <img
+              src="assets/images/Shake/photo-1609951651556-5334e2706168.avif"
+            />
+          </div>
+        </div>
+
+        <div class="navigation clearfix clear">
+            <label for="tab1">
+          <i class="fa fa-circle"></i></span>
+       </label> <label for="tab2">
+          <i class="fa fa-circle"></i></span>
+       </label>
+        <label for="tab3">
+          <i class="fa fa-circle"></i></span>
+       </label>
+        <label for="tab4">
+          <i class="fa fa-circle"></i></span>
+       </label>
+        <label for="tab5">
+          <i class="fa fa-circle"></i></span>
+       </label>
+        </div>
+      </section>
+
+      <section class="open_hours">
+        <h4>Book table</h4>
+        <h2>Opening Hours</h2>
+        <span><i class="fa fa-phone rounded-icon"></i></span>
+        <span><strong>Call Now</strong></span>
+        <span class="blk phone">+12345 678 910</span>
+
+        <div class="opening">
+          <div class="left">
+            <p class="blk">Monday to Tuesday</p>
+            <p class="blk">
+              <strong
+                >09:00 am <span class="separator">-</span> 22:00 pm</strong
+              >
+            </p>
+          </div>
+          <div class="right">
+            <p class="blk">Friday to Sunday</p>
+            <p class="blk">
+              <strong
+                >11:00 am <span class="separator">-</span> 20:00 pm</strong
+              >
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="carousel clearfix">
+        <div class="carousel-direction left">
+          <i class="fa fa-arrow-left rounded-icon"></i>
+        </div>
+        <div class="carousel-image">
+          <img src="assets/images/fruitbowl.jpg" alt="fruitbowl" class="img" />
+        </div>
+        <div class="carousel-direction right">
+          <i class="fa fa-arrow-right rounded-icon"></i>
+        </div>
+      </section>
+      <section class="testimonials clearfix clear">
+        <h4>testimonials</h4>
+        <h2>Customer Say</h2>
+         <div class="tabs" id="testimonials">
+       <input type="radio" name="tabs2" id="tab6" checked >
+       <label for="tab6">
+          <i class="fa fa-circle"></i></span>
+       </label>
+       <input type="radio" name="tabs2" id="tab7">
+       <label for="tab7">
+          <i class="fa fa-circle"></i></span>
+       </label>
+       <input type="radio" name="tabs2" id="tab8">
+       <label for="tab8">
+          <i class="fa fa-circle"></i></span>
+       </label>
+       <input type="radio" name="tabs2" id="tab9">
+       <label for="tab9">
+          <i class="fa fa-circle"></i></span>
+       </label>
+       <div id="tab__content--6" class="tab__content">
+         <span
+            ><img src="assets/images/Styler-01.jpg" class="customer"
+          /></span>
+          <span>Marijane Wayne</span>
+          <span class="customer-function">Styler</span>
+          <span class="stars"
+            ><i class="fa fa-star"></i><i class="fa fa-star"></i
+            ><i class="fa fa-star"></i><i class="fa fa-star"></i
+            ><i class="fa fa-star"></i
+          ></span>
+
+          <span class="user-comment">
+ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis maiores laboriosam fugit soluta iusto vero, cum esse. Reiciendis esse impedit illum sunt culpa, numquam facilis non neque laboriosam! Magni, alias.
+          </span>
+       </div>
+       <div id="tab__content--7" class="tab__content">
+          <span>
+            <img src="assets/images/customers/pexels-photo-9489162.webp" class="customer"
+          /></span>
+          <span>John Smith</span>
+          <span class="customer-function">Yoga Coatch</span>
+          <span class="stars"
+            ><i class="fa fa-star"></i><i class="fa fa-star"></i
+            ><i class="fa fa-star"></i><i class="fa fa-star"></i
+            ><i class="fa fa-star"></i
+          ></span>
+          <p  class="user-comment">
+            Laboris culpa quis esse non consectetur ex. Consectetur amet est
+            veniam laborum commodo. Ipsum proident culpa sunt eu aliquip
+            occaecat eu eu occaecat sint labore irure exercitation. Ad officia
+            et irure ut incididunt quis sit culpa. Dolor exercitation labore
+            laborum fugiat mollit.
+          </p>
+       </div>
+       <div id="tab__content--8" class="tab__content">
+         <span
+            ><img src="assets/images/customers/pexels-photo-7776852.webp" class="customer"
+          /></span>
+          <span>Mr Kell</span>
+          <span class="customer-function">FullStack enjoyer</span>
+          <span class="stars"
+            ><i class="fa fa-star"></i><i class="fa fa-star"></i
+            ><i class="fa fa-star"></i><i class="fa fa-star"></i
+            ><i class="fa fa-star"></i
+          ></span>
+          <p>
+ Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati dolorum, nostrum dicta aliquam nesciunt ratione nam, neque esse error, mollitia id asperiores explicabo repudiandae quasi perferendis in recusandae. Autem, cum?
+          </p>
+       </div>
+       <div id="tab__content--9" class="tab__content">
+         <span
+            ><img src="assets/images/customers/pexels-photo-10997111.webp" class="customer"
+          /></span>
+          <span>Louise Aragon</span>
+          <span class="customer-function">Actress</span>
+          <span class="stars"
+            ><i class="fa fa-star"></i><i class="fa fa-star"></i
+            ><i class="fa fa-star"></i><i class="fa fa-star"></i
+            ><i class="fa fa-star c-dark"></i
+          ></span>
+          <p>
+Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+ Explicabo quos enim dolor eius eveniet dolore officiis, ipsam voluptas dolorum.
+Soluta ab similique eligendi error in quae debitis, nobis exercitationem sequi.
+         </p>
+       </div>
+    </div>
+      </section>
+    </div>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
