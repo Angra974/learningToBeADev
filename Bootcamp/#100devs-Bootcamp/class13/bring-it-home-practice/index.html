@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="This is where your description goes" />
+    <meta name="keywords" content="one, two, three" />
+    <link href="css/normalize.css" type="text/css" rel="stylesheet" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" />
+
+    <title>Title in the tab</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Bring it home</h1>
+      <div class="div-top">
+        <select class="sel" name="action" id="selector">
+          <option value="-1" class="sel">-- Select --</option>
+          <option value="0" class="sel">
+            Create a variable, add 10 to it, alert the value
+          </option>
+          <option value="1">
+            Create a function that divide one number by another and returns the
+            remainder
+          </option>
+          <option value="2">
+            Create a function that subtracts 4 numbers and alerts the difference
+          </option>
+          <option value="3">
+            Create a function that adds two numbers and if the sum is greater
+            than 50 alert Jumanji
+          </option>
+          <option value="4">
+            Create a function that multiplys three numbers and if the product is
+            divisible by 3 alert ZEBRA
+          </option>
+          <option value="5">Create a variable and console log the value</option>
+        </select>
+      </div>
+      <div class="input">
+        <button id="copy">Copy</button> <button id="test">Test</button>
+        <button id="reload">Reload</button>
+
+        <label for="console">Console</label>
+        <input type="text" id="myConsole" disabled value="" />
+      </div>
+      <div class="div-bottom">
+        <div class="function">
+          <textarea
+            cols="100"
+            rows="40"
+            placeholder="Your code will be here"
+            id="codeArea"
+          >
+          </textarea>
+        </div>
+      </div>
+    </div>
+    <!-- external CSS link -->
+
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>

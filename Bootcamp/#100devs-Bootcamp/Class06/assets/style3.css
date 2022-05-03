@@ -1,0 +1,44 @@
+
+/* Basic page style resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+[hidden] {
+  display: none !important;
+}
+
+body {
+  margin: 20px;
+}
+
+header, footer {
+  height: 100px;
+}
+
+div {
+  height: 200px;
+}
+
+aside {  
+  width: 20%;
+}
+
+section {
+  width: 40%;
+}
+
+aside, section  {
+  float: left;
+  display: inline-block;
+  height: 100%;
+}
+
+header, footer, aside, section {
+  border: 1px solid grey;
+}
+
+footer, div {
+  clear: both;
+}

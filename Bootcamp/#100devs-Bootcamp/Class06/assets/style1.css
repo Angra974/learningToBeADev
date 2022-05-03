@@ -1,0 +1,49 @@
+
+/* Basic page style resets */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+[hidden] {
+  display: none !important;
+}
+/* just to see the layout */
+body {
+    margin: 10px;
+}
+
+header, footer, section {
+  height: 100px;
+}
+    /* only to be visible for assignment */
+header, footer, div, section, aside {
+  border: 1px solid grey;
+}
+
+footer, div {
+  clear: both;
+}
+
+header + div {
+  height: 100px;
+}
+
+header + div + div {
+  height: 200px;
+}
+
+
+section {
+  height: 100%;
+  width: 33.3333333333%;
+  float: left;
+}
+
+div > aside {
+  width: 50%;
+  float: left;
+  height: 100%;
+}
+

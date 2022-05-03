@@ -1,0 +1,339 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  z-index: 1;
+}
+
+#menu a:not(.joinus),
+#menu a:not(.joinus):visited,
+#menu a:not(.joinus):link {
+  color: gray;
+}
+
+.latest {
+  margin-top: 2em;
+  margin-bottom: 1em;
+  font-weight: bold;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+}
+
+footer {
+}
+
+.main-wrapper {
+  min-width: 250px;
+}
+
+#menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  float: left;
+  height: 100vh;
+}
+#menu > ul > li {
+  padding: 2px;
+}
+
+#menu > ul:nth-child(2) > li:nth-child(2) {
+  padding-bottom: 15px;
+}
+
+/* needed to use children with absolute properties
+so we can set children height to 100% height of parent */
+.container {
+  position: relative;
+}
+
+section.principal {
+  float: left;
+  bottom: 0;
+  padding-right: 1.5em;
+}
+
+section.secondary {
+  float: left;
+}
+
+.secondary article {
+  padding: 0.6em;
+  border-top: 1px solid #eee;
+}
+
+.small_logo {
+  color: green;
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+.small_logo span {
+  color: orange;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+
+.joinus {
+  color: orange;
+  font-weight: bold;
+  text-decoration: none;
+  padding-right: 0.5em;
+}
+
+.big_logo {
+  display: block;
+  margin-left: 40px;
+  color: green;
+  font-size: 2.2em;
+  font-weight: bold;
+  position: absolute;
+  top: 4px;
+}
+
+.inner {
+  padding-right: 1em;
+}
+
+.author {
+  padding-bottom: 10px;
+}
+
+@media all and (max-width: 1199px) {
+  .principal {
+    width: 50%;
+  }
+
+  .secondary {
+    width: 50%;
+  }
+
+  .secondary > article:nth-child(1),
+  .secondary > article:nth-child(2) {
+    float: left;
+  }
+
+  .secondary > article:nth-child(3),
+  .secondary > article:nth-child(4) {
+    float: right;
+  }
+
+  .secondary article {
+    width: 50%;
+    padding: 1em;
+  }
+}
+
+@media all and (max-width: 955px) {
+  .principal {
+    width: 100%;
+  }
+
+  .secondary {
+    width: 100%;
+  }
+
+  .secondary > article:nth-child(1),
+  .secondary > article:nth-child(2) {
+    float: left;
+  }
+
+  .secondary > article:nth-child(3),
+  .secondary > article:nth-child(4) {
+    float: right;
+  }
+
+  .secondary article {
+    width: 50%;
+    padding: 1em;
+  }
+}
+
+.news article {
+  float: left;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+@media all and (min-width: 1000px) and (max-width: 1200px) {
+  .secondary article {
+    min-height: 178px;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .principal {
+    width: 60%;
+  }
+
+  section.secondary {
+    width: 40%;
+    float: right;
+    height: 100%;
+    position: absolute;
+    right: 0;
+  }
+}
+
+@media all and (min-width: 900px) {
+  .inner {
+    width: 33.33%;
+    float: inherit;
+  }
+}
+
+@media all and (max-width: 701px) {
+  .inner {
+    width: 50%;
+    float: inherit;
+  }
+  .news > article > div:nth-child(3) {
+    display: none;
+  }
+}
+
+@media all and (max-width: 700px) {
+  .secondary article {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 601px) {
+  .news .inner {
+    width: 100%;
+  }
+
+  .news > article > div:nth-child(3) {
+    display: block;
+  }
+}
+
+main {
+  position: absolute;
+  top: 0;
+}
+@media all and (min-width: 421px) {
+  main {
+    margin-left: 200px;
+  }
+
+  #mobile {
+    display: none;
+  }
+
+  #menu ul {
+    display: block;
+    margin-top: 45px;
+    list-style: none;
+  }
+}
+
+@media all and (max-width: 420px) {
+  #menu,
+  #mobileMenuInput {
+    display: none;
+  }
+
+  #mobileMenuInput ~ label {
+    top: 9px;
+    position: absolute;
+    left: 10px;
+  }
+
+  input#mobileMenuInput:checked ~ ul {
+    display: block;
+    position: relative;
+    z-index: 3;
+    padding: 3px;
+    width: 200px;
+    list-style: none;
+  }
+
+  input#mobileMenuInput:checked ~ ul li {
+    padding: 5px 10px;
+  }
+
+  input#mobileMenuInput:checked ~ ul li a {
+    color: #eee;
+  }
+  #mobile {
+    margin-top: 1em;
+  }
+
+  #mobile li {
+    z-index: 10;
+    background-color: green;
+    color: #eee;
+  }
+
+  main {
+    margin-top: 3em;
+  }
+
+  #mobileMenuInput ~ label > span {
+    display: block;
+    width: 24px;
+    height: 3px;
+    transition: 0.4s;
+    margin: 5px 0;
+  }
+
+  .bar1,
+  .bar3 {
+    background-color: green;
+  }
+
+  .bar2 {
+    background-color: yellow;
+  }
+}

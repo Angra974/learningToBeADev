@@ -1,0 +1,290 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+:root {
+  --white: rgb(255, 255, 255);
+  --grey: rgb(102, 120, 138);
+  --dark: rgb(0, 0, 0);
+  --light-grey: rgb(219, 223, 226);
+  --footer: rgb(22, 31, 42);
+  --darker-white: rgb(234, 234, 235);
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  background-color: var(--grey);
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+.wrapper {
+  min-width: 320px;
+  min-height: 480px;
+}
+
+header,
+footer {
+  float: left;
+}
+
+nav div.logo {
+  width: 55px;
+  height: 5em;
+  margin-top: -1em;
+}
+
+nav {
+  color: var(--darker-white);
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 1rem;
+}
+
+nav span {
+  display: inline-block;
+  vertical-align: top;
+}
+
+img.logo {
+  max-width: 100%;
+  background-size: cover;
+}
+
+section {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+header {
+  padding-left: 10px;
+}
+
+header,
+section,
+footer {
+  width: 100%;
+}
+
+section {
+  padding: 18px;
+  padding-bottom: 82px;
+}
+section p {
+  margin: 0 auto;
+  max-width: 600px;
+  padding-bottom: 30px;
+}
+
+footer {
+  padding: 10px;
+}
+
+header,
+.meet_opportunity {
+  background-color: var(--grey);
+  color: var(--white);
+}
+
+.meet_opportunity {
+  color: var(--white);
+  z-index: 1;
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      right bottom,
+      from(rgba(102, 120, 138, 0.2)),
+      to(rgba(102, 120, 138, 0.5))
+    ),
+    url("../images/kick_left.png");
+  background-size: cover;
+}
+
+.why_section,
+.volunteer {
+  background-color: var(--white);
+  color: var(--dark);
+}
+.visit_section {
+  background-color: var(--light-grey);
+  color: var(--dark);
+  padding-bottom: 50px;
+}
+
+nav .float-left,
+nav .float-right {
+  min-width: 2em;
+}
+
+nav .float-left {
+  margin-top: 1em;
+  width: 45%;
+}
+nav .float-right {
+  padding-right: 20px;
+  text-align: right;
+  margin-top: 6px;
+}
+footer {
+  background-color: var(--footer);
+  color: var(--white);
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+a,
+a:visited,
+a:active,
+a:link {
+  text-decoration: none;
+}
+
+.btn {
+  text-transform: uppercase;
+  padding: 0.5em;
+  border-radius: 5px;
+}
+
+section .btn {
+  margin-top: 2rem;
+  width: 140px;
+  min-height: 60px;
+}
+
+.btn-align .btn {
+  min-width: 100px;
+  width: inherit;
+}
+
+.btn--white {
+  background-color: var(--white);
+  color: var(--grey);
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+div.logo {
+  display: inline-block;
+  overflow: hidden;
+}
+
+header span.logo {
+  background-image: url(../images/logo.png);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+h1 {
+  font-size: 4.5em;
+  text-transform: uppercase;
+  word-break: break-word;
+}
+
+h2 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.why_section h4 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  text-transform: uppercase;
+}
+
+footer h4 {
+  color: var(--light-grey);
+  font-size: 0.8rem;
+}
+
+footer .float-left {
+  max-width: 145px;
+  margin-bottom: 25px;
+}
+
+footer .float-left span {
+  margin-right: 10px;
+}
+
+footer .address {
+  margin-right: 13px;
+  width: 167px;
+}
+footer i {
+  margin-right: 15px;
+}
+
+footer .organisation {
+  margin-top: 25px;
+}
+
+footer > div:last-child {
+  margin-top: 10px;
+  border-top: 1px solid var(--white);
+}
+
+.meet_opportunity > p {
+  font-size: 2rem;
+}
+
+.meet_opportunity a {
+  text-decoration: none;
+  color: var(--light-grey);
+}
+
+.video {
+  background-image: url(../images/play.png) no-repeat;
+}
+
+article {
+  width: 45%;
+}
+
+footer .logo {
+  margin-left: 120px;
+}
+article p {
+  text-align: center;
+}
+
+.organisation p {
+  word-break: break-word;
+}
+.btn-align div {
+  margin-top: 20px;
+  width: 50%;
+}

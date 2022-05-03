@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+nav {
+  position: fixed;
+  width: 200px;
+  padding: 20px;
+}
+
+nav ul {
+  list-style: none;
+  color: gray;
+}
+
+nav ul li.login {
+  padding-bottom: 10px;
+}
+
+nav ul li.join-us {
+  color: orange;
+}
+
+main {
+  margin-left: 200px;
+  display: inline-block;
+  border-bottom: 1px solid #eee;
+}
+
+section.main {
+  padding: 10px;
+  display: inline-block;
+  border-bottom: 1px solid #eee;
+}
+.main h2 {
+  font-size: 40px;
+}
+
+.main p {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+article {
+  padding: 15px;
+}
+
+.div1_3 article {
+  border-bottom: 1px solid #eee;
+}
+
+.ourLogo {
+  color: green;
+  line-height: 2;
+  font-weight: 600;
+}
+
+.ourLogo > span:nth-child(3) {
+  color: orange;
+  font-weight: 900;
+}
+
+.div1_3 article:last-child {
+  border: none;
+}
+
+.author {
+  padding-top: 10px;
+}
+
+.img {
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.div2_3 {
+  width: 60%;
+  float: left;
+}
+
+.div1_3 {
+  width: 30%;
+  float: left;
+}
+
+.division {
+  clear: both;
+  font-size: 30px;
+  padding: 15px;
+}

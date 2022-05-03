@@ -1,0 +1,39 @@
+# The Js Way
+
+## Coding time
+
+<p>
+Complete the following program to add the definition of the Dog class.
+
+    Dogs taller than 60 emote "Grrr! Grrr!" when they bark, other ones yip "Woof! Woof!".
+</p>
+
+```Javascript
+
+// class Dog
+class Dog {
+    name = "";
+    size = 0;species = "";
+        
+    constructor(name, size, species) {
+	    (this.name = name), (this.size = size), (this.species = species);
+    }
+	
+    bark() {
+        return this.size > 60 ? `Grrr! Grrr!` : `Woof! Woof!`;
+    }
+}
+
+
+const fang = new Dog("Fang", "boarhound", 75);
+console.log(
+    `${fang.name} is a ${fang.species} dog measuring ${fang.size}`
+);
+
+console.log(`Look, a cat! ${fang.name} barks: ${fang.bark()}`);
+
+const snowy = new Dog("Snowy", "terrier", 22);
+console.log(`${snowy.name} is a ${snowy.species} dog measuring ${snowy.size}`);
+console.log(`Look, a cat! ${snowy.name} barks: ${snowy.bark()}`);
+
+```
